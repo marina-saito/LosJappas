@@ -130,9 +130,7 @@
     font-size: 1.5em;
     line-height: 1.5em;
     color: #f25b00;
-    padding: 0.5em 0 0 0;
     margin: 0;
-    /* width: 100%; */
   }
 
   h3 {
@@ -163,19 +161,9 @@
     color: #f25b00;
     font-size: 1.5em;
   }
-  
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 3em;
-    text-align: center;
-    margin: 0 0 0 0.8em;
-  }
 
   a {
     text-decoration: none;
-    color: #747474;
   }
   
   /*************** WRAPPER ***************/
@@ -230,7 +218,8 @@
   
   nav {
     display: flex;
-    width: 80%;
+    width: 60%;
+    max-width: 400px;
     text-align: center;
     padding-bottom: 0.5em;
   }
@@ -276,7 +265,6 @@
     line-height: 1em;
     padding: 0;
     margin: 0;
-    /* display: inline; */
     text-align: center;
     width: 100%;
   }
@@ -363,11 +351,9 @@
   }
 
   #cardapio .content-wrapper{
-    display: flex;
-    flex-flow: column wrap;
     align-items: flex-start;
     width: 85%;
-    height: 100%;
+    /* height: 100%; */
   }
 
   #cardapio li, #cardapio a {
@@ -375,6 +361,10 @@
     font-size: 1.1em;
     color: #f05a00;
     padding: 0.5em;
+  }
+
+  #cardapio li {
+    color: #ffffff;
   }
 
   .submenus-titles {
@@ -388,10 +378,7 @@
   }
 
   .submenus-titles ul {
-    display: flex;
-    flex-flow: row wrap;
     align-items: flex-start;
-    width: 100%;
   }
 
   #cardapio li a:hover {
@@ -418,7 +405,6 @@
   .wrapper-on {
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
   }
 
   .combinado, .combo, .temaki, .yakisoba, .harumaki, .porcao, .bebida, .sobremesa {
@@ -466,10 +452,6 @@
     width: 50%;
   }
 
-  #cardapio li {
-    color: #ffffff;
-  }
-
   .back-to-top {
     background-color: #fff;
     color: black;
@@ -490,10 +472,6 @@
     text-align: center;
   }
 
-  /* .back-to-top a {
-    width: 50px;
-  } */
-
   .back-to-top:hover {
     background-color: #ccc;
   }
@@ -511,9 +489,8 @@
   }
 
   #contato .content-wrapper{
-    display: flex;
     width: 85%;
-    height: 100%;
+    /* height: 100%; */
   }
   
   /*************** POP-UP BOX ***************/
@@ -667,21 +644,16 @@
   
   @media only screen and (min-width: 650px) {
 
-    /* header .content-wrapper, main .content-wrapper, footer .content-wrapper {
-      max-width: 614.4px;
-    } */
 
     /* ________________________ HEADER STYLES ___________________________________ */
   
     header .content-wrapper {
       flex-flow: row wrap;
-      justify-content: space-between;
       width: 80%;
     }
 
     .wrapper1, .wrapper2 {
       height: inherit;
-      width: max-content;
     }
 
     .wrapper1 {
@@ -701,33 +673,11 @@
 
     /* ________________________ FOOTER STYLES ___________________________________ */
 
-    footer .content-wrapper {
-      flex-flow: column wrap;
-      justify-content: space-between;
-      width: 80%;
-    }
-
-    footer .wrapper1, footer .wrapper2 {
-      flex-flow: row nowrap;
-      height: 50%;
-      width: 100%;
-    }
-
-    .no-line-break {
-      width: 33%;
-      text-align: center;
-    }
-
-    footer p {
-      display: flex;
-      justify-content: center;
-    }
 
     /* ________________________ MAIN STYLES ___________________________________ */
 
     main .content-wrapper {
       flex-flow: row wrap;
-      justify-content: space-between;
       width: 80%;
     }
 
@@ -747,29 +697,19 @@
     }
 
     .vertical-split2 {
-      /* justify-content: flex-end; */
       width: 60%;
     }
 
-    .cardapio {
-      width: 100%;
+    .submenus-titles {
+      justify-content: center;
     }
 
-    #cardapio .content-wrapper {
-      /* align-items: center; */
+    .submenus-titles ul {
+      max-width: 670px;
     }
 
     #cardapio .submenus-titles li {
       width: auto;
-    }
-
-    #itens-cardapio h2, #itens-cardapio h3, #itens-cardapio p, #itens-cardapio li {
-      /* width: inherit; */
-      /* text-align: center; */
-    }
-
-    #itens-cardapio ul {
-      /* display: block; */
     }
 
     .wrapper-on {
@@ -778,27 +718,15 @@
 
     .combinado, .combo, .temaki, .yakisoba, .harumaki, .porcao, .bebida, .sobremesa {
       display: flex;
-      /* flex-flow: row wrap; */
       max-width: 45%;
       padding-left: 0.5em;
       padding-right: 0.5em;
     }
 
     .fig-on {
-      /* flex-flow: row nowrap; */
       max-width: 100%;
       padding-left: 0;
       padding-right: 0;
-    }
-
-    .fig-off {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    .single {
-      /* flex-flow: row nowrap; */
-      /* max-width: max-content; */
     }
 
     #contato .content-wrapper {
@@ -816,13 +744,17 @@
   }
 
   @media only screen and (min-width: 768px) {
+
     header .content-wrapper, main .content-wrapper, footer .content-wrapper {
-      max-width: 670px;
+      max-width: 1000px;
     }
 
     .back-to-top {
-      /* bottom: 100px; */
       right: 100px;
+    }
+
+    #home .content-wrapper, #cardapio .content-wrapper {
+      max-width: 670px;
     }
 
     #contato .content-wrapper {
@@ -833,18 +765,13 @@
     #contato .wrapper1, #contato .wrapper2 {
       width: 47%;
     }
-  
 
   }
 
   @media only screen and (min-width: 1200px) {
+
     header .content-wrapper, footer .content-wrapper, #cardapio .content-wrapper {
       max-width: 1200px;
-    }
-
-
-    .submenus-titles ul {
-      justify-content: center;
     }
 
     .back-to-top {
@@ -873,7 +800,13 @@
       margin: auto 0 auto 1em;
     }
 
+  }
 
+  @media only screen and (min-width: 1280px) {
+
+    .submenus-titles ul {
+      max-width: 1200px;
+    }
   }
   
   /* @media print,
