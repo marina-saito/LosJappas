@@ -30,7 +30,7 @@
   <!--............................ HEADER ...............................-->
   <!--...................................................................-->
 
-  <header id="top">
+  <header>
 
     <div class="content-wrapper">
 
@@ -59,15 +59,32 @@
 
   <main>
 
+    <div id="options-nav">
+      <nav class="nav">
+        <ul>
+            <li><a href="index.html"><span>Cardápio</span></a></li>
+            <li><a href="../contato/index.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <section id="cardapio">
 
-      <div id="options-nav">
-        <nav class="nav">
-          <ul>
-              <li><a href="index.html"><span>Cardápio</span></a></li>
-              <li><a href="../contato/index.html">Contato</a></li>
-          </ul>
-        </nav>
+      <div class="sidebar">
+        <!--_________ LOGO _________-->
+        <div class="wrapper1">
+          <a href="../index.html"><h1>Los Jappas</h1></a>
+        </div>
+
+        <!--_________ NAV __________-->
+        <div class="wrapper2">
+          <nav class="nav-sidebar">
+            <ul>
+                <li><a href="index.html"><span>Cardápio</span></a></li>
+                <li><a href="../contato/index.html">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
       
       <div class="content-wrapper">
@@ -75,23 +92,23 @@
         <!--.... CARDAPIO ...............................................-->
 
         <!--.... SUBMENUS DO CARDAPIO .................................-->
-        <!-- <div class="submenus-titles">
+        <div class="submenus-titles" id="top">
           <ul>
-              <li class="menu-title"><a class="menu-current" href="#itens-cardapio">Combinados</a></li>
-              <li class="menu-title"><a href="#itens-cardapio">Combos</a></li>
-              <li class="menu-title"><a href="#itens-cardapio">Temakis</a></li>
-              <li class="menu-title"><a href="#itens-cardapio">Yakisoba</a></li>
-              <li class="menu-title"><a href="#itens-cardapio">Harumaki</a></li>
-              <li class="menu-title"><a href="#itens-cardapio">Porções</a></li>
-              <li class="menu-title"><a href="#itens-cardapio">Bebidas</a></li>
-              <li class="menu-title"><a href="#itens-cardapio">Sobremesas</a></li>
+              <li class="menu-title" id="menu-current">Combinados</li>
+              <li class="menu-title">Combos</li>
+              <li class="menu-title">Temakis</li>
+              <li class="menu-title">Yakisoba</li>
+              <li class="menu-title">Harumaki</li>
+              <li class="menu-title">Porções</li>
+              <li class="menu-title">Bebidas</li>
+              <li class="menu-title">Sobremesas</li>
           </ul>
-        </div> -->
+        </div>
 
         <!--.... LINHA DIVISAO ........................................-->
-        <!-- <div class="divisao">
+        <div class="divisao">
           <div class="linha"></div>
-        </div> -->
+        </div>
 
         <!--.... ITEMS DO CARDAPIO ....................................-->
         <div id="itens-cardapio">
@@ -99,11 +116,11 @@
           <!--.... COMBINADOS x5 .............-->
           <div class="item-wrapper-combinados wrapper-on">
 
-            <h1>Combinados</h1>
+            <!-- <h1>Combinados</h1> -->
 
-            <div class="divisao-p-laranja">
+            <!-- <div class="divisao-p-laranja">
               <div class="linha-p-laranja"></div>
-            </div>
+            </div> -->
 
             <!--.... Combinado 1 .............-->
             <div class="combinado fig-on">
@@ -199,18 +216,18 @@
           
           </div>
 
-          <div class="divisao">
+          <!-- <div class="divisao">
             <div class="linha"></div>
-          </div>
+          </div> -->
 
           <!--.... COMBOS x2 .................-->
           <div class="item-wrapper-combos">
 
-            <h1>Combos</h1>
+            <!-- <h1>Combos</h1> -->
 
-            <div class="divisao-p-laranja">
+            <!-- <div class="divisao-p-laranja">
               <div class="linha-p-laranja"></div>
-            </div>
+            </div> -->
             
             <!--.... Combo simples ...........-->
             <div class="combo fig-off">
@@ -254,18 +271,18 @@
 
           </div>
 
-          <div class="divisao">
+          <!-- <div class="divisao">
             <div class="linha"></div>
-          </div>
+          </div> -->
 
           <!--.... Temakis x1 ................-->
           <div class="item-wrapper-temakis">
 
-            <h1>Temakis</h1>
+            <!-- <h1>Temakis</h1>
 
             <div class="divisao-p-laranja">
               <div class="linha-p-laranja"></div>
-            </div>
+            </div> -->
             
             <!--.... Temaki simples ...........-->
             <div class="temaki fig-on">
@@ -311,18 +328,18 @@
 
           </div>
 
-          <div class="divisao">
+          <!-- <div class="divisao">
             <div class="linha"></div>
-          </div>
+          </div> -->
 
           <!--.... Yakisoba x4 ...............-->
           <div class="item-wrapper-yakisoba">
 
-            <h1>Yakisoba</h1>
+            <!-- <h1>Yakisoba</h1>
 
             <div class="divisao-p-laranja">
               <div class="linha-p-laranja"></div>
-            </div>
+            </div> -->
             
             <!--.... Yakisoba de legumes .....-->
             <div class="yakisoba fig-on">
@@ -382,18 +399,18 @@
 
           </div>
 
-          <div class="divisao">
+          <!-- <div class="divisao">
             <div class="linha"></div>
-          </div>
+          </div> -->
 
           <!--.... Harumaki x1 ...............-->
           <div class="item-wrapper-harumaki">  
 
-            <h1>Harumaki</h1>
+            <!-- <h1>Harumaki</h1>
 
             <div class="divisao-p-laranja">
               <div class="linha-p-laranja"></div>
-            </div>
+            </div> -->
             
             <!--.... Harumaki ................-->
             <div class="harumaki fig-off single">
@@ -403,7 +420,7 @@
               </div>
   
               <div class="texto">
-                <!-- <h2>Harumaki</h2> -->
+                <h2>Harumaki</h2>
                 <p>Rolinho Primavera de Legumes</p>
                 <p>Rolinho Primavera de Carne com Legumes</p>
                 <p>Rolinho Primavera de Frango com Legumes e Cream Cheese</p>
@@ -416,18 +433,18 @@
 
           </div>
 
-          <div class="divisao">
+          <!-- <div class="divisao">
             <div class="linha"></div>
-          </div>
+          </div> -->
 
           <!--.... Porcoes x7 ................--> <!--so 3 possuem foto....-->
           <div class="item-wrapper-porcoes">
 
-            <h1>Porções</h1>
+            <!-- <h1>Porções</h1>
 
             <div class="divisao-p-laranja">
               <div class="linha-p-laranja"></div>
-            </div>
+            </div> -->
             
             <!--.... Niguiri ..................-->
             <div class="porcao fig-on">
@@ -471,7 +488,7 @@
             </div>
 
             <!--.... Shimeji .................-->
-            <div class="porcao fig-off single">
+            <div class="porcao fig-off">
               
               <div class="fig">
               </div>
@@ -498,7 +515,7 @@
             </div>
 
             <!--.... Hossomaki ...............-->
-            <div class="porcao fig-off">
+            <div class="porcao fig-off single">
               
               <div class="fig">
               </div>
@@ -519,18 +536,18 @@
 
           </div>
 
-          <div class="divisao">
+          <!-- <div class="divisao">
             <div class="linha"></div>
-          </div>
+          </div> -->
 
           <!--.... Bebidas x1 ................-->
           <div class="item-wrapper-bebidas">
 
-            <h1>Bebidas</h1>
+            <!-- <h1>Bebidas</h1>
 
             <div class="divisao-p-laranja">
               <div class="linha-p-laranja"></div>
-            </div>
+            </div> -->
             
             <!--.... Bebidas .................-->
             <div class="bebida fig-off single">
@@ -556,18 +573,18 @@
 
           </div>
 
-          <div class="divisao">
+          <!-- <div class="divisao">
             <div class="linha"></div>
-          </div>
+          </div> -->
 
           <!--.... Sobremesa x1 ..............-->
           <div class="item-wrapper-sobremesas">
 
-            <h1>Sobremesas</h1>
+            <!-- <h1>Sobremesas</h1>
 
             <div class="divisao-p-laranja">
               <div class="linha-p-laranja"></div>
-            </div>
+            </div> -->
             
             <!--.... Gelatina mosaico ........-->
             <div class="sobremesa fig-on">

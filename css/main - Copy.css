@@ -265,7 +265,7 @@
   
   footer {
     width: 100%;
-    height: 80px;
+    height: 5em;
   }
   
   footer p {
@@ -429,14 +429,14 @@
 
   #cardapio .content-wrapper{
     justify-content: flex-start;
-    align-items: center;
-    /* width: 85%; */
+    align-items: flex-start;
+    width: 85%;
   }
 
   .submenus-titles {
     display: flex;
     justify-content: flex-start;
-    width: 90%;
+    width: 100%;
     padding: 2em 0 2em 0;
     cursor: pointer;
     font-weight: bold;
@@ -464,10 +464,6 @@
     padding: 0.4em 0.5em;
     margin: 0 3px;
     font-weight: normal;
-  }
-
-  .submenus-titles li:hover {
-    background-color: #fce8d3;
   }
 
   #menu-current {
@@ -529,12 +525,12 @@
 
   #cardapio h2 {
     padding: 0;
-    margin: 0 0 0.5em 0;
+    margin-bottom: 0.5em;
     color: #f25b00;
   }
 
   #itens-cardapio {
-    padding: 1em 0.5em 2em 0.5em;
+    padding: 0 0.5em 2em 0.5em;
     width: 100%;
   }
 
@@ -544,33 +540,25 @@
     justify-content: space-between;
     /* display: flex; */
     flex-flow: row wrap;
-    height: 0;
   }
 
   .wrapper-on {
     display: flex;
     flex-flow: row wrap;
-    height: auto;
   }
 
   .combinado, .combo, .temaki, .yakisoba, .harumaki, .porcao, .bebida, .sobremesa {
     margin: 1em 0;
-    padding: 0.8em 1.5em;
+    padding: 1em;
     width: 100%;
     background: url('../img/frame-white.png') repeat;
     background-position: center;
-    background-size: 100% auto;
-    border-radius: 20px;
+    background-size: cover;
   }
 
   .fig-on {
     display: flex;
     justify-content: flex-start;
-  }
-
-  .fig-off {
-    display: flex;
-    justify-content: center;
   }
 
   .single {
@@ -589,8 +577,8 @@
   }
   
   .texto {
-    width: fit-content;
-    margin: auto 0 auto 0;
+    width: 100%;
+    margin: 1em 0;
     align-items: center;
   }
 
@@ -834,7 +822,7 @@
     }
 
     footer {
-      background-color: #2c2c2c;
+      background-color: #2b2a2a;
     }
 
     #home, #cardapio, #contato {
@@ -872,10 +860,6 @@
       text-align: center;
     }
 
-    .nav-sidebar li:hover {
-      background-color: #2c2c2c;
-    }
-
     #home .content-wrapper, #cardapio .content-wrapper, #contato .content-wrapper {
       overflow: auto;
       height: calc(100vh - 80px);
@@ -887,23 +871,6 @@
 
     .submenus-titles, #itens-cardapio {
       width: 90%;
-    }
-
-    .submenus-titles {
-      padding-bottom: 1.5em;
-    }
-
-    .submenus-titles ul {
-      flex-wrap: wrap;
-      justify-content: center;
-      overflow-x: unset;
-      margin-bottom: 0;
-      padding-bottom: 0;
-      max-height: unset;
-    }
-
-    .submenus-titles li {
-      margin-bottom: 0.5em;
     }
 
     main .wrapper1 {
@@ -931,20 +898,20 @@
     }
 
     .wrapper-on {
-      justify-content: space-around;
+      justify-content: center;
     }
 
     .combinado, .combo, .temaki, .yakisoba, .harumaki, .porcao, .bebida, .sobremesa {
       display: flex;
-      max-width: 37%;
+      max-width: 45%;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
     }
 
     .fig-on {
       max-width: 100%;
-      padding-left: 2.5em;
-      padding-right: 2.5em;
-      /* padding-left: 0;
-      padding-right: 0; */
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .single {
@@ -985,11 +952,6 @@
       max-width: 670px;
     } */
 
-    .item-wrapper-harumaki, .item-wrapper-bebidas {
-      max-width: 530px;
-      margin: auto auto;
-    }
-
     #contato .content-wrapper {
       justify-content: space-around;
       align-content: center;
@@ -1004,6 +966,9 @@
 
   @media only screen and (min-width: 950px) {
 
+    /* header .content-wrapper, footer .content-wrapper, #cardapio .content-wrapper {
+      max-width: 1200px;
+    } */
 
     /* .back-to-top {
       bottom: 100px;
@@ -1011,72 +976,35 @@
     } */
 
 
-    
-    /* #home .content-wrapper {
-      flex-flow: column wrap;
-      justify-content: flex-start;
-      align-items: flex-start;
-    } */
-
-    html {
-      font-size: 18px;
-    }
-
-    .sidebar .wrapper1 {
-      width: 175px;
-    }
-
-    #home .content-wrapper {
-      /* width: 70%; */
-      background: url('../img/niguiri-home3b.png') no-repeat;
-      background-size: cover;
-      background-position: center;
-      /* padding-top: 61.077%; */
-    }
-
     .pic {
-      background: none;
-      height: calc((100vh - 80px)/3);
-      padding: 0;
+      width: 50%;
+      background: url('../img/niguiri-home3b.png') no-repeat;
+      background-size: contain;
+      background-position: center;
+      padding-top: 30.538%;
     }
-
-    .text-pic-div {flex-flow: row wrap;}
-    .text-pic {padding-left: 0.3em;}
-
-    #home {
-      color: #ffffff;
-    }
-
-    /* .intro {
-      margin: 0 1em;
-      max-width: calc(70% - 2em);
-    } */
 
     .intro {
-      max-width: 880px;
-      font-size: 1.2em;
+      margin: 0 1em;
+      max-width: calc(50% - 2em);
     }
 
     .info {
       display: flex;
-      width: 100%;
-      justify-content: space-around;
-      max-width: 880px;
-    } 
-
-
-    .combinado, .combo, .temaki, .yakisoba, .harumaki, .porcao, .bebida, .sobremesa {
-      /* width: max-content; */
-      max-width: 37%;
     }
 
-    /* .fig-on {
+    .combinado, .combo, .temaki, .yakisoba, .harumaki, .porcao, .bebida, .sobremesa {
+      width: max-content;
+      max-width: 45%;
+    }
+
+    .fig-on {
       width: 45%;
     }
     
     .fig-off {
       min-width: 45%;
-    } */
+    }
     
     .item-wrapper-harumaki .single, .item-wrapper-bebidas .single {
       max-width: 100%;
@@ -1095,7 +1023,7 @@
   @media only screen and (min-width: 1000px) {
 
     .submenus-titles ul {
-      /* max-width: 825px; */
+      max-width: 825px;
     }
   }
   

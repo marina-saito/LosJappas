@@ -28,10 +28,10 @@ $(window).load(function () {
 
     
     // CARDAPIO
-    $('.menu-title a').click(function() {
+    $('.menu-title').click(function() {
         // TITULO DO SUB-MENU ATIVO
-        $('.submenus-titles ul li a').removeClass('menu-current');
-        $(this).addClass('menu-current');
+        $('.submenus-titles ul li').removeAttr('id');
+        $(this).attr('id', 'menu-current');
         
         // ITENS DO SUB-MENU ATIVO
         $('#itens-cardapio div').removeClass('wrapper-on');
@@ -45,7 +45,16 @@ $(window).load(function () {
             $('.back-to-top').fadeOut();
         }
     });
+
+    $("#cardapio .content-wrapper").scroll(function(){
+        if($("#cardapio .content-wrapper").scrollTop()>200){
+            $('.back-to-top').fadeIn();
+        } else {
+            $('.back-to-top').fadeOut();
+        }
+    });
         
     
 });
+
 
